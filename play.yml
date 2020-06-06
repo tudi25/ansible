@@ -1,0 +1,7 @@
+---
+- hosts: "{{host}}"  # to open--->  ansible-playbook [playbook name] --extra-var  "host=all"
+  become: yes
+  any_errors_fatal: true
+
+  roles:
+    - apache_web 
